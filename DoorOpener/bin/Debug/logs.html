@@ -1,0 +1,58 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My Garage Controller</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+    <script src="js/date.format.js"></script>
+    <script src="js/client.js"></script>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/alertbar.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/pagination.css">
+    <link rel="stylesheet" type="text/css" href="css/mobipick.css" />
+    <script type="text/javascript" src="js/external/xdate.js"></script>
+    <script type="text/javascript" src="js/external/xdate.i18n.js"></script>
+    <script type="text/javascript" src="js/external/mobipick.js"></script>
+    
+</head>
+<body>
+    <ul class="navigation">
+        <li class="nav-item"><a href="index.html">Doors</a></li>
+        <li class="nav-item"><a href="logs.html">Events</a></li>
+    </ul>
+
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label id="trigger" for="nav-trigger"></label>
+
+    <div class="site-wrap">
+        <div data-role="page">
+            <div id="alert" style="display: none;">
+                <div class="alert">This is a slide down alert!</div>
+            </div>
+            <div data-role="header">
+                <h1>Events</h1>
+            </div>
+            <div data-role="content">
+                <div class="ui-content" style="color:black;text-shadow:none;">
+                    <p>
+                        <div>
+                            <span>Events </span>
+                            <span>from </span><input type="text" class="datepicker-input min-date" />
+                            <span>to </span><input type="text" class="datepicker-input max-date" />
+                            <a href="#" id="refresh-date-button" data-role="button" data-icon="refresh" data-iconpos="notext" data-inline="true"></a>
+                        </div>
+                    </p>
+                    <ul id="eventlist"></ul>
+                </div>
+                <div class="div-pag"><ul class="pagination"></ul></div>
+            </div>
+            <div data-role="footer">
+                goTec &reg;
+            </div>
+        </div>
+    </div>
+</body>
+</html>
